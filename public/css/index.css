@@ -38,7 +38,7 @@ body{
         list-style-type: none;
 
 }
-li{
+#streams li{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -127,4 +127,78 @@ h1 {
 .form-container button[type="submit"]:hover {
     background-color: #555;
 }
+/* styles.css */
 
+
+#quiz-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+#result-container {
+    margin-top: 20px;
+    display: none;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#welcome-container{
+    background-color: yellowgreen;
+    color:#1b1a1a;
+}
+#common-head{
+ text-align: center;
+}
+#common-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+list-style: none;
+}#common-nav li{
+
+        list-style-type: none;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 0 50px rgb(84, 84, 226);
+        color:blue;
+}
+#common-nav ul{
+   display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color:blue;
+}
+h1 a{
+    color: rgb(84, 84, 226);
+}
