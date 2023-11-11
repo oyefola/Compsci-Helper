@@ -1,0 +1,130 @@
+body{
+    background-color:black;
+    font-family:'lato', 'arial', 'helvetica', 'sans-serif';
+    font-size: 20px;
+    color:white;
+}
+#compsci-helper-header {
+    display: inline-block;
+    font-family: 'consolas', 'courier new', monospace;
+    font-size: 24px;
+    color: rgb(88, 88, 250);
+}
+#landing-header {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 2.5s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+#landing-page {
+    font-size: 25px;
+}
+
+#streams{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        list-style-type: none;
+
+}
+li{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        list-style-type: none;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 0 50px rgb(84, 84, 226);
+        color:blue;
+}
+.account-options{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        list-style-type: none;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 50px rgb(84, 84, 226);
+        color:white;
+        font-size: large;
+}
+button{
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 0 50px rgb(84, 84, 226);
+        color:blue;
+        font-size: large;
+}
+
+/* Login/Signup Form */
+.form-container{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    width: 400px;
+    
+    border-radius: 5px;
+    box-shadow: 0 0 50px rgb(84, 84, 226);
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'consolas', 'courier new', monospace;
+    font-size: 45px;
+    color: rgb(88, 88, 250);
+    text-align: center;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+    
+}
+
+.form-container button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(88, 88, 250);
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.form-container button[type="submit"]:hover {
+    background-color: #555;
+}
+
