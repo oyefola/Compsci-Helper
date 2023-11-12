@@ -159,7 +159,7 @@ function submitAnswer() {
 
     if (selectedOption) {
         const currentQuestion = questions[currentQuestionIndex];
-       
+     
         // Display encouraging message in the result-container
         const messageContainer = document.getElementById("result-container");
         messageContainer.innerHTML = `<p>${currentQuestion.message}</p>`;
@@ -196,12 +196,67 @@ function displayResults(userScore) {
 
     if (userScore >= 9) {
         resultContainer.innerHTML += '<p>You\'re an Object-Oriented Programming master! Check out these advanced resources:</p>';
-        // Add advanced resources here
+        resultContainer.innerHTML += `
+            <ul>
+                <li>
+                    <a href="https://www.coursera.org/specializations/design-patterns">Design Patterns Specialization on Coursera</a>
+                </li>
+                <li>
+                    <a href="https://www.edx.org/course/advanced-object-oriented-design-and-patterns">Advanced Object-Oriented Design and Patterns on edX</a>
+                </li>
+                <li>
+                    <a href="https://www.udemy.com/course/advanced-object-oriented-programming-in-java-design-patterns">Advanced Object-Oriented Programming in Java: Design Patterns on Udemy</a>
+                </li>
+                <li>
+                    <a href="https://www.pluralsight.com/paths/design-patterns-with-java">Design Patterns with Java Path on Pluralsight</a>
+                </li>
+                <li>
+                    <a href="https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented-Software/dp/0201633612">Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides</a>
+                </li>
+            </ul>
+        `;
     } else if (userScore >= 5 && userScore < 9) {
         resultContainer.innerHTML += '<p>You\'re on the right track! Here are some intermediate resources:</p>';
-        // Add intermediate resources here
+        resultContainer.innerHTML += `
+            <ul>
+                <li>
+                    <a href="https://www.coursera.org/specializations/object-oriented-design">Object-Oriented Design Specialization on Coursera</a>
+                </li>
+                <li>
+                    <a href="https://www.edx.org/course/object-oriented-programming-in-java-ii">Object-Oriented Programming in Java II on edX</a>
+                </li>
+                <li>
+                    <a href="https://www.udacity.com/course/object-oriented-programming-in-java--ud805">Object-Oriented Programming in Java on Udacity</a>
+                </li>
+                <li>
+                    <a href="https://www.pluralsight.com/paths/object-oriented-programming">Object-Oriented Programming Path on Pluralsight</a>
+                </li>
+                <li>
+                    <a href="https://www.amazon.com/Effective-Java-2nd-Edition-Joshua/dp/0321348233">Effective Java by Joshua Bloch</a>
+                </li>
+            </ul>
+        `;
     } else {
         resultContainer.innerHTML += '<p>No worries! Here are some beginner resources to get you started:</p>';
+        resultContainer.innerHTML += `
+            <ul>
+                <li>
+                    <a href="https://www.freecodecamp.org/learn/object-oriented-programming/">FreeCodeCamp</a>
+                </li>
+                <li>
+                    <a href="https://www.codecademy.com/learn/java">Codecademy: Learn Java</a>
+                </li>
+                <li>
+                    <a href="https://www.tutorialspoint.com/object_oriented_programming/">tutorialspoint</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/java/">W3Schools: Java Tutorial</a>
+                </li>
+                <li>
+                    <a href="https://www.geeksforgeeks.org/object-oriented-programming-in-java/">GeeksforGeeks: Object-Oriented Programming in Java</a>
+                </li>
+            </ul>
+        `;
         // Add beginner resources here
     }
 

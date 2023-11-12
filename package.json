@@ -1,0 +1,13 @@
+{
+  "name": "interview-prep-app",
+  "version": "1.0.0",
+  "description": "Interview Preparation App",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
+  }
+}

@@ -196,14 +196,47 @@ function displayResults(userScore) {
     resultContainer.innerHTML = `Congratulations! You scored ${userScore} out of ${questions.length}!`;
 
     if (userScore >= 9) {
-        resultContainer.innerHTML += '<p>You\'re a functional Development GOAT! Check out these advanced resources:</p>';
-        // Add advanced resources here
-    } else if (userScore >= 5 && userScore < 9) {
-        resultContainer.innerHTML += '<p>You\'re on the right track! Here are some intermediate resources:</p>';
-        // Add intermediate resources here
+        resultContainer.innerHTML += `
+            <div>
+                <p>You're a functional Development GOAT! Check out these advanced resources:</p>
+                <ul>
+                    <li>
+                        <a href="https://www.coursera.org/specializations/functional-programming-in-scala">Functional Programming in Scala Specialization on Coursera</a>
+                    </li>
+                    <li>
+                        <a href="https://www.edx.org/course/advanced-functional-programming">Advanced Functional Programming on edX</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=9p_9_7w39bY">Advanced Functional Programming in Haskell by Erik Meijer</a>
+                    </li>
+                    <li>
+                        <a href="https://www.amazon.com/Programming-Haskell-Graham-Hutton/dp/0521764048">Programming in Haskell by Graham Hutton</a>
+                    </li>
+                    <li>
+                        <a href="https://www.packtpub.com/product/category/programming/functional-programming">Functional Programming books on PacktPub</a>
+                    </li>
+                </ul>
+            </div>
+        `;
     } else {
         resultContainer.innerHTML += '<p>No worries! Here are some beginner resources to get you started:</p>';
-        // Add beginner resources here
+        resultContainer.innerHTML += '<div><ul>\
+            <li>\
+                <a href="https://www.coursera.org/learn/functional-programming">Functional Programming Principles and Applications on Coursera</a>\
+            </li>\
+            <li>\
+                <a href="https://www.edx.org/course/introduction-to-functional-programming">Introduction to Functional Programming on edX</a>\
+            </li>\
+            <li>\
+                <a href="https://www.youtube.com/watch?v=IH4z5H8_x9Y">Learn Functional Programming in 1 Hour by Richard Feldman</a>\
+            </li>\
+            <li>\
+                <a href="https://www.amazon.com/Functional-Programming-Made-Easy-Introduction/dp/1491951198">Functional Programming Made Easy: A Step-by-Step Guide by Adam Chapman</a>\
+            </li>\
+            <li>\
+                <a href="https://www.packtpub.com/product/learn-functional-programming-with-javascript-by-rafael-schaefer-9781802261555">Learn Functional Programming with JavaScript by Rafael Schaefer</a>\
+            </li>\
+        </ul></div>';
     }
 
     resultContainer.style.display = "block";

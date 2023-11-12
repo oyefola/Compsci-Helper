@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Preparation</title>
+    <link rel="stylesheet" href="/public/css/index.css">
+</head>
+<body>
+    <header>
+        <h1 id="common-header"><a href="/index.html">Compsci Helper</a></h1>
+    </header>
+
+    <nav id="common-nav">
+        <ul>
+            <li><a href="/pages/Object Oriented Programming.html">Object Oriented Programming</a></li>
+            <li><a href="/pages/WebDevelopment.html">Web Development</a></li>
+            <li><a href="/pages/Functional Programming.html">Functional Programming</a></li>
+                        <li><a href="/pages/InterviewPrep.html">Interview Preparation</a></li>
+
+        </ul>
+    </nav>
+        <h1>Interview Preparation</h1>
+        <main>
+            <form id="interviewForm" onsubmit="submitForm(); return false;">
+                <ul>
+                <li><label for="proficiency">What is your level of proficiency in programming?</label>
+                <select id="proficiency" name="proficiency"></li>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+
+               <li> <label for="company">Which company's coding assessment are you preparing for?</label></li>
+                </ul>
+                <input type="text" id="company" name="company" placeholder="Enter company name">
+
+                <button type="button" onclick="submitForm()">Submit</button>
+            </form>
+
+            <div id="resourcesContainer">
+                <!-- Resources will be displayed here -->
+            </div>
+        </main>
+
+    <script src="/js/interview.js"></script>
+</body>
+</html>
