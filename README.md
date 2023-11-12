@@ -11,7 +11,7 @@ Compsci Helper boasts not one, not two, but four fantastic learning streams read
 
 ## Getting Started
 
-1. Open https://oyefola.github.io/Compsci-Helper/
+1. Open https://oyefola.github.io/Compsci-Helper/ or clone this repository and open the index.html file in your browser
 2. Take our thrilling proficiency quiz to unveil your coding superpowers.
 3. Dive into personalized learning streams packed with resources.
 4. Gear up for coding interviews with our targeted tech guides.
